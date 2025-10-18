@@ -16,22 +16,20 @@
             "48": "icons/icon48.png",
             "128": "icons/icon128.png"
         },
-        "default_title": "Starsites AdBlock"
+        "default_title": "Starsites AdBlock",
+        "default_popup": "dist/html/modal.html"
     },
 
-    "permissions": [
-        "declarativeNetRequest"
-    ],
-    "host_permissions": [
-        "*://*/*"
-    ],
+    "permissions": ["declarativeNetRequest"],
+    "host_permissions": ["*://*/*"],
 
     "content_scripts": [
-    {
-        "matches": ["*://starstreams.pro/*"],
-        "js": ["neutralizer.js"],
-        "run_at": "document_start"
-    }
+        {
+            "matches": ["*://starstreams.pro/*"],
+            "js": ["dist/js/neutralizer.min.js"],
+            "css": ["dist/css/style.min.css"],
+            "run_at": "document_start"
+        }
     ],
 
     "declarative_net_request": {

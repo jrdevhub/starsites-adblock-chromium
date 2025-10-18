@@ -1,0 +1,38 @@
+{
+    "name": "starsites-adblock-chromium",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "build": "webpack --config webpack.config.ts",
+        "lint": "eslint",
+        "clean": "rimraf dist",
+        "format": "prettier --write \"**/*.{js,ts,json,css,scss,yml,md,html}\"",
+        "postinstall": "husky",
+        "prepare": "husky"
+    },
+    "lint-staged": {
+        "*.{js,ts,json,css,scss,yml,md,html}": [
+            "yarn format"
+        ]
+    },
+    "devDependencies": {
+        "@eslint/js": "^9.38.0",
+        "@types/node": "^24.8.1",
+        "@typescript-eslint/eslint-plugin": "^8.46.1",
+        "@typescript-eslint/parser": "^8.46.1",
+        "eslint": "^9.38.0",
+        "html-webpack-plugin": "^5.6.4",
+        "husky": "^9.1.7",
+        "lint-staged": "^16.2.4",
+        "prettier": "^3.6.2",
+        "rimraf": "^6.0.1",
+        "ts-loader": "^9.5.4",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.9.3",
+        "typescript-eslint": "^8.46.1",
+        "webpack": "^5.102.1",
+        "webpack-cli": "^6.0.1"
+    },
+    "packageManager": "yarn@4.10.3"
+}

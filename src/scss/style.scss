@@ -1,0 +1,24 @@
+body {
+    padding: 0 !important;
+}
+
+.fullplayer {
+    display: block !important;
+    gap: 0 !important;
+    margin: 0 !important;
+    max-width: none !important;
+}
+
+.player {
+    flex: 4 !important;
+}
+
+header {
+    background-color: transparent !important;
+    border: 0 !important;
+}
+
+.embedchat {
+    display: none !important;
+    width: 300px !important;
+}
