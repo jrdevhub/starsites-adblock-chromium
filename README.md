@@ -12,12 +12,16 @@ A simple AdBlock chromium extension that blocks ads on Starsites domains.
 
 Before you begin, ensure that you have the following installed on your machine:
 
-1. [Node.js](https://nodejs.org/) >= v18.x.x (recommended LTS)
-2. [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/) package manager (recommended Yarn Berry)
+1. [Node.js](https://nodejs.org/) >= v20.x.x
+2. [Yarn](https://yarnpkg.com/) or [pnpm](https://pnpm.io/) or [npm](https://www.npmjs.com/)
 
 ### Tasks
 
-First, `yarn install` or `npm install` workspace.
+First, install dependencies using your preferred package manager:
+
+- `yarn install`
+
+Available commands:
 
 - **`yarn build`**: Builds the app for production deployment.
 - **`yarn clean`**: Cleans the dist folder.
