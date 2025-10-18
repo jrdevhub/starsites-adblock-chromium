@@ -5,9 +5,9 @@
     "type": "module",
     "scripts": {
         "build": "webpack --config webpack.config.ts",
-        "lint": "eslint",
         "clean": "rimraf dist",
         "format": "prettier --write \"**/*.{js,ts,json,css,scss,yml,md,html}\"",
+        "lint": "eslint",
         "postinstall": "husky",
         "prepare": "husky"
     },
