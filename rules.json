@@ -22,7 +22,7 @@
         "priority": 1,
         "action": { "type": "block" },
         "condition": {
-            "urlFilter": "trzxfxjnqmxmh.store",
+            "urlFilter": "streamvault.top",
             "resourceTypes": [
                 "main_frame",
                 "sub_frame",
@@ -31,6 +31,39 @@
                 "xmlhttprequest",
                 "media",
                 "stylesheet",
+                "font"
+            ]
+        }
+    },
+    {
+        "id": 3,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "goal.starsites.fun",
+            "resourceTypes": [
+                "main_frame",
+                "script",
+                "image",
+                "xmlhttprequest",
+                "media",
+                "font"
+            ]
+        }
+    },
+    {
+        "id": 4,
+        "priority": 1,
+        "action": { "type": "block" },
+        "condition": {
+            "urlFilter": "https://cdn.jsdelivr.net/npm/disable-devtool",
+            "resourceTypes": [
+                "main_frame",
+                "sub_frame",
+                "script",
+                "image",
+                "xmlhttprequest",
+                "media",
                 "font"
             ]
         }
